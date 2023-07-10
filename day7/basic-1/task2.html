@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="myFuction()">
+        Delete
+    </button>
+    <script>
+        function myFuction() {
+            var result = confirm("Bạn có chắc chắn muốn xóa record này không ?");
+      if (result) {
+        console.log("Đã xóa");
+      } else {
+        console.log("Không xóa");
+      }
+        }
+    </script>
+</body>
+</html>

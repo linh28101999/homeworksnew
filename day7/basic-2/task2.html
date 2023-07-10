@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="result"></div>
+    <!-- Yêu cầu:
+
+Tính huống thực tế có một danh sách sản phẩm khách hàng đã mua:
+    Áo bull Size M, 2 sản phẩm, giá 160.000đ
+    Áo khoác gió NorthFace Size L, 1 sản phẩm - giá 600.000đ
+    Quần Jean Nam Size 30 , 1 sản phẩm, giá 350.
+1, Hãy Dùng mảng và vòng lặp để code thể hiện đơn hàng trên
+2, In ra màn hình sách sản phẩm với thẻ table ra thẻ div#result
+3, Tạo thêm cột thành tiền cho từng dòng bằng số lượng x đơn giá
+4, In giá trị tổng tiền vào cuối bill -->
+    <script>
+        // Mảng chứa thông tin đơn hàng sản phẩm
+var orderItems = [
+  { tenSanPham: 'Áo bull Size M', soLuong: 2, donGia: 160000 },
+  { tenSanPham: 'Áo khoác gió NorthFace Size L', soLuong: 1, donGia: 600000 },
+  { tenSanPham: 'Quần Jean Nam Size 30', soLuong: 1, donGia: 350000 }
+];
+
+// Tạo bảng HTML
+var tableHTML = '<table><tr><th>Tên sản phẩm</th><th>Số lượng</th><th>Đơn giá</th><th>Thành tiền</th></tr>';
+
+// Tính tổng tiền
+var tongTien = 0;
+
+// Lặp qua từng mục trong đơn hàng
+for (var i = 0; i < orderItems.length; i++) {
+  var item = orderItems[i];
+  
+  // Tính thành tiền
+  var thanhTien = item.soLuong * item.donGia;
+  
+  // Thêm hàng mới vào bảng
+  tableHTML += '<tr><td>' + item.tenSanPham + '</td><td>' + item.soLuong + '</td><td>' + item.donGia + '</td><td>' + thanhTien + '</td></tr>';
+  
+  // Cộng dồn vào tổng tiền
+  tongTien += thanhTien;
+}
+
+// Kết thúc bảng HTML
+tableHTML += '</table>';
+
+// Hiển thị bảng kết quả
+document.getElementById('result').innerHTML = tableHTML;
+
+// In giá trị tổng tiền vào cuối bill
+document.getElementById('result').innerHTML += '<p>Tổng tiền: ' + tongTien + 'đ</p>';
+
+    </script>
+</body>
+</html>

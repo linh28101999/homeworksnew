@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Nhập vào một số gọi là điểm trung bình của 1 học sinh. Sau đó in ra màn hình xếp loại học tập của học sinh đó theo quy tắc sau: -->
+    <script>
+        var userName = prompt("Nhập Điểm số của bạn:");
+        if (userName >= 9) {
+            console.log('Bạn là học sinh xuất sắc');
+        }
+        else if(userName < 9 && userName >= 8)
+        {
+            console.log('Bạn là học sinh giỏi');
+        }
+        else if(userName < 8 && userName >= 6.5)
+        {
+            console.log('Bạn là học sinh khá');
+        }
+        else if(userName < 6.5 && userName >= 5)
+        {
+            console.log('Bạn là học sinh trung bình');
+        }
+        else
+        {
+            console.log('Bạn là học sinh yếu');
+        }
+    </script>
+    
+
+</body>
+</html>
