@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+.flex
+{
+    display: flex;
+}
+body .container
+{
+    height: 400px;
+    width: 500px;
+    flex-direction: column;
+    background-color: ;
+}
+body .container .item
+{
+    border: 1px solid rgb(248, 245, 245);
+
+    height: calc((100% - 60px) / 7);
+    width: 100%;
+    background-color: red;
+    margin-top: 10px;
+}
+body .container .item:first-child
+{
+    margin-top: 0;
+}
+p
+{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 18px 20px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.content-left
+{
+    width: 150px;
+    
+}
+.content-right{
+    width: 350px;
+    background-color: rgb(248, 245, 245);
+}
+.right-1
+{
+    width: calc(100% / 5);
+    background-color: rgb(218, 73, 73);
+    border-left: 1px solid rgb(218, 73, 73);
+}
+#right-1-storge
+{
+    width: calc(100% / 2);
+    background-color: rgb(0, 217, 255);
+    border-left: 1px solid rgb(7, 163, 224);
+}
+#content-left-storage
+{
+    background-color: rgb(7, 163, 224);
+}
+#right-1-user
+{
+    width: calc(100% - 30%);
+    background-color: rgb(0, 255, 21);
+    border-left: 1px solid rgb(7, 224, 79);
+}
+#content-left-user
+{
+    background-color: rgb(7, 224, 79);
+}
+#right-1-visitor
+{
+    width: calc(100% - 70%);
+    background-color: rgb(230, 63, 252);
+    border-left: 1px solid #f351eb;
+}
+#content-left-visitor
+{
+    background-color: #f351eb;
+}
+#right-1-email
+{
+    width: calc(100% - 55%);
+    background-color: rgb(255, 230, 3);
+    border-left: 1px solid #c9e433;
+}
+#content-left-email
+{
+    background-color: #c9e433;
+}
+#right-1-basic
+{
+    width: calc(100% - 20%);
+    background-color: rgb(230, 63, 252);
+    border-left: 1px solid #f351eb;
+}
+#content-left-basic
+{
+    background-color: #f351eb;
+}
+#right-1-other
+{
+    width: calc(100% - 63%);
+    background-color: rgb(43, 98, 252);
+    border-left: 1px solid #3364cf;
+}
+#content-left-other
+{
+    background-color: #3364cf;
+}
+
